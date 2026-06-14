@@ -107,7 +107,7 @@ Item {
                 font.family: textField.font.family || "sans-serif"
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: textField.verticalAlignment
-                font.italic: true
+                font.italic: false
             }
         }
     }

@@ -27,7 +27,7 @@ Rectangle {
         radius: avatar.squareRadius
         color: Config.passwordInputBackgroundColor
         opacity: Config.passwordInputBackgroundOpacity
-        visible: true
+        visible: parent.source.toString() === "file:///usr/share/sddm/faces/.face.icon"
     }
 
     Image {
@@ -38,7 +38,6 @@ Rectangle {
         antialiasing: true
         visible: false
         smooth: true
-
         fillMode: Image.PreserveAspectCrop
         horizontalAlignment: Image.AlignHCenter
         verticalAlignment: Image.AlignVCenter
@@ -87,6 +86,7 @@ Rectangle {
             height: this.width
             radius: avatar.squareRadius
             width: faceImage.width
+            antialiasing: true
         }
     }
 
